@@ -1,0 +1,18 @@
+.header-component {
+  /* NAV */ }
+  .header-component nav {
+    background: white;
+    color: #005499;
+    padding: 20px;
+    margin-bottom: 50px;
+    overflow: hidden; }
+    .header-component nav span.title {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 0 30px 0 20px; }
+    .header-component nav a {
+      color: #0070cc;
+      margin: 0 10px; }
+      .header-component nav a:hover, .header-component nav a:active, .header-component nav a:focus {
+        color: #008cff;
+        text-decoration: none; }

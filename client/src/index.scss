@@ -1,0 +1,114 @@
+// Imports
+@import 'variables';
+
+// General
+
+*{
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+body{
+    background-image: linear-gradient(to bottom right, darken($primaryColor, 20%), $primaryColor);
+    color: $textColor;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.big-title{
+    font-weight: bolder;
+    font-size: 3em;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.5em;
+        text-shadow: none !important;
+    }
+}
+
+.middle-title{
+    font-weight: bolder;
+    font-size: 2em;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.2em;
+        text-shadow: none !important;
+    }
+}
+
+.big-title-primary{
+    color: $primaryColor;
+    text-shadow: darken($primaryColor, 30%) 2px 2px 0px;
+}
+
+.big-title-secondary{
+    color: $secondaryColor;
+    text-shadow: darken($secondaryColor, 30%) 2px 2px 0px;
+}
+
+.big-title-third{
+    color: $thirdColor;
+    text-shadow: darken($thirdColor, 30%) 2px 2px 0px;
+}
+
+.big-title-error{
+    color: $errorColor;
+    text-shadow: darken($errorColor, 30%) 2px 2px 0px;
+}
+
+// Form
+
+.form-center {
+    margin: 0 auto;
+    max-width: 330px;
+    padding: 15px;
+}
+
+// Bootstrap
+
+.jumbotron{
+    background: white;
+    color: lighten(invert($textColor), 30%);
+    border: solid 2px darken($primaryColor, 10%);
+    text-align: center;
+
+    table{
+        text-align: initial;
+    }
+}
+
+.btn{
+    border: none;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.btn-primary{
+    background: $primaryColor !important;
+
+    &:hover{
+        background: darken($primaryColor, 5%) !important;
+    }
+}
+
+.btn-success{
+    background: $secondaryColor !important;
+
+    &:hover{
+        background: darken($secondaryColor, 5%) !important;
+    }
+}
+
+.form-control, .btn-full{
+    width: 100%;
+    display: inline-block;
+}
+
+ul.error{
+    margin-bottom: 10px;
+    padding: 0;
+    list-style: none;
+    color: $errorColor;
+}
